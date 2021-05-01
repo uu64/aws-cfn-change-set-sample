@@ -3,6 +3,6 @@ Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM template using nested stack
 Resources:
   SAMApp:
-    Type: AWS::CloudFormation::Stack
+    Type: AWS::Serverless::Application
     Properties:
-      TemplateURL: app.yaml
+      Location: app.yaml
