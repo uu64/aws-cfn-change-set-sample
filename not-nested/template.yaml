@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       StageName: prod
-  ApiFunction: # Adds a GET api endpoint at "/" to the ApiGatewayApi via an Api event
+  ApiFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: hello_world/
